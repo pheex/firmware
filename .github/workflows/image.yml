@@ -18,7 +18,7 @@ jobs:
             link=https://github.com/openipc/firmware/releases/download/latest
             link2=https://github.com/pheex/firmware/releases/download/latest
             create() {
-              uboot=u-boot-$1-nor.bin
+              uboot=u-boot-$1-universal.bin
               firmware=openipc.$2-nor-$3.tgz
               release=target/openipc-$1-nor-$3.bin
 
