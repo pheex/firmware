@@ -14,54 +14,9 @@ jobs:
       fail-fast: false
       matrix:
         platform:
-          # Sigmastar
-          - ssc325_lite
-          - ssc335_lite
-          - ssc377_lite
-          - ssc338q_lite
-
-          # Hisilicon
-          - hi3516av100_lite
-          - hi3516cv100_lite
-          - hi3516cv200_lite
-          - hi3516cv300_lite
-          - hi3516cv500_lite
-          - hi3516ev200_lite
-          - hi3519v101_lite
-          - hi3536cv100_lite
-          - hi3536dv100_lite
-
-          # Goke
-          - gk7102_lite
+          
           - gk7205v200_lite
-          - gk7205v500_lite
-
-          # Ingenic
-          - t20_lite
-          - t21_lite
-          - t31_lite
-          - t40_lite
-
-          # Allwinner
-          - v851s_lite
-
-          # Fullhan
-          - fh8852v100_lite
-          - fh8852v200_lite
-
-          # Grainmedia
-          - gm8136_lite
-
-          # Novatek
-          - nt98562_lite
-
-          # Rockchip
-          - rv1106_lite
-          - rv1126_lite
-
-          # Xiongmai
-          - xm510_lite
-          - xm530_lite
+          
 
     steps:
       - name: Checkout source
