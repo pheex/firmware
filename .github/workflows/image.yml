@@ -15,7 +15,8 @@ jobs:
     steps:
       - name: Prepare
         run: |
-            link=https://github.com/pheex/firmware/releases/download/latest
+            link=https://github.com/openipc/firmware/releases/download/latest
+            link2=https://github.com/pheex/firmware/releases/download/latest
             create() {
               uboot=u-boot-$1-nor.bin
               firmware=openipc.$2-nor-$3.tgz
@@ -27,8 +28,8 @@ jobs:
                 return 0
               fi
 
-              if ! wget -nv $link/$firmware -O output/$2.tgz; then
-                echo -e "Download failed: $link/$firmware\n"
+              if ! wget -nv $link2/$firmware -O output/$2.tgz; then
+                echo -e "Download failed: $link2/$firmware\n"
                 return 0
               fi
 
